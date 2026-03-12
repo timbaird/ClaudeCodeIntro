@@ -95,13 +95,14 @@ def main():
         "Should start with 'sk-or-'. Check your OpenRouter API key."
     ))
 
-    # ANTHROPIC_API_KEY must be explicitly empty
+    # ANTHROPIC_API_KEY must be empty or unset (not a real key)
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     results.append(check(
-        "ANTHROPIC_API_KEY is set to empty string",
-        api_key == "",
-        'Must be explicitly set to "" (empty string). '
-        'Run: export ANTHROPIC_API_KEY=""'
+        "ANTHROPIC_API_KEY is empty or unset",
+        api_key is None or api_key == "",
+        "Must be empty or unset so Claude Code uses OpenRouter instead. "
+        "Windows: [System.Environment]::SetEnvironmentVariable('ANTHROPIC_API_KEY', '', 'User')  "
+        "Mac/Linux: export ANTHROPIC_API_KEY=\"\""
     ))
 
     model = os.environ.get("ANTHROPIC_DEFAULT_SONNET_MODEL", "")
