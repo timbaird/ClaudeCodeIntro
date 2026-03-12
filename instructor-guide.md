@@ -31,7 +31,7 @@ Send students the link to `exercises/00-setup/README.md` **at least a few days b
 
 ### 3. Test the Setup Yourself
 
-Run through the full OpenRouter setup on a clean machine (or at least verify the environment variables and model work). Free models on OpenRouter change frequently — confirm that `qwen/qwen3-coder-480b-a35b-instruct` is still available and free before class.
+Run through the full OpenRouter setup on a clean machine (or at least verify the environment variables and model work). Free models on OpenRouter change frequently — confirm that `google/gemini-2.5-flash` is still available and free before class.
 
 **Fallback models** (if the recommended one is unavailable):
 - `deepseek/deepseek-v3.2-20251201`
