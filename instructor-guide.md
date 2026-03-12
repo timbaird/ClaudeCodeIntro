@@ -31,11 +31,11 @@ Send students the link to `exercises/00-setup/README.md` **at least a few days b
 
 ### 3. Test the Setup Yourself
 
-Run through the full OpenRouter setup on a clean machine (or at least verify the environment variables and model work). Free models on OpenRouter change frequently — confirm that `google/gemini-2.5-flash` is still available and free before class.
+Run through the full OpenRouter setup on a clean machine (or at least verify the environment variables and model work). Free models on OpenRouter change frequently — confirm that `openai/gpt-4o-mini` is still available and free before class.
 
 **Fallback models** (if the recommended one is unavailable):
 - `deepseek/deepseek-v3.2-20251201`
-- `google/gemini-2.5-flash`
+- `openai/gpt-4o-mini`
 - `openai/gpt-4o-mini`
 
 Check current free models at: [https://openrouter.ai/models?pricing=free](https://openrouter.ai/models?pricing=free)
@@ -114,7 +114,7 @@ Free OpenRouter models typically allow ~20 requests/minute and ~200 requests/day
 | Student can't install Git | On macOS, `xcode-select --install` is usually the fix. On Windows, make sure they restart their terminal after installing. |
 | Claude Code extension not working | Make sure they installed the one by **Anthropic**, not a third-party one. Try restarting VS Code. |
 | "Authentication failed" | Most common cause: `ANTHROPIC_API_KEY` is not set to an empty string. It must be `""`, not unset. |
-| Model gives garbage responses | Free model quality varies. Try `/clear` and rephrase. If persistent, try switching models: `/model google/gemini-2.5-flash` |
+| Model gives garbage responses | Free model quality varies. Try `/clear` and rephrase. If persistent, try switching models: `/model openai/gpt-4o-mini` |
 | "Rate limit exceeded" | Wait 60 seconds. If happening frequently, have the student slow down — read and think between prompts. |
 | Student's machine is very slow | OpenRouter is cloud-based so machine speed shouldn't matter for the AI. If VS Code itself is slow, close other applications. |
 | Student has paid Claude account | Great! They can skip the OpenRouter setup entirely. Their experience will be better. |

@@ -139,7 +139,7 @@ Now we need to tell Claude Code to use your OpenRouter key instead of a paid Ant
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://openrouter.ai/api", "User")
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "YOUR_KEY_HERE", "User")
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "", "User")
-[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_SONNET_MODEL", "google/gemini-2.5-flash", "User")
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_SONNET_MODEL", "openai/gpt-4o-mini", "User")
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_HAIKU_MODEL", "openai/gpt-4o-mini", "User")
 ```
 
@@ -158,7 +158,7 @@ cat >> ~/.zshrc << 'EOF'
 export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
 export ANTHROPIC_AUTH_TOKEN="YOUR_KEY_HERE"
 export ANTHROPIC_API_KEY=""
-export ANTHROPIC_DEFAULT_SONNET_MODEL="google/gemini-2.5-flash"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="openai/gpt-4o-mini"
 export ANTHROPIC_DEFAULT_HAIKU_MODEL="openai/gpt-4o-mini"
 EOF
 ```
