@@ -139,8 +139,8 @@ Now we need to tell Claude Code to use your OpenRouter key instead of a paid Ant
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://openrouter.ai/api", "User")
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "YOUR_KEY_HERE", "User")
 [System.Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "", "User")
-[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_SONNET_MODEL", "google/gemini-2.5-pro-exp-03-25:free", "User")
-[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_HAIKU_MODEL", "google/gemini-2.5-pro-exp-03-25:free", "User")
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_SONNET_MODEL", "qwen/qwen3-coder:free", "User")
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_DEFAULT_HAIKU_MODEL", "qwen/qwen3-coder:free", "User")
 ```
 
 4. **Close and reopen VS Code** for the changes to take effect
@@ -158,8 +158,8 @@ cat >> ~/.zshrc << 'EOF'
 export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
 export ANTHROPIC_AUTH_TOKEN="YOUR_KEY_HERE"
 export ANTHROPIC_API_KEY=""
-export ANTHROPIC_DEFAULT_SONNET_MODEL="google/gemini-2.5-pro-exp-03-25:free"
-export ANTHROPIC_DEFAULT_HAIKU_MODEL="google/gemini-2.5-pro-exp-03-25:free"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="qwen/qwen3-coder:free"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="qwen/qwen3-coder:free"
 EOF
 ```
 
